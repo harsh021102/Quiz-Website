@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">QuizMania</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+        <a href="#"><button class="aboutus-btn">About Us</button></a>
+    </header>
+    <section class="quiz-container">
+        <div class="container">
+            <div class="cat-header">
+                <h1>Computer Science</h1>
+            </div>
+            <div class="question-number">
+                <h2 id="qNum">Q.1</h2>
+            </div>  
+            <div class="ques-container">
+                <div class="ques-box"><h1 id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, earum?</h1></div>
+                <div class="option-box">
+                    <button class="option" id="a" onclick="answerCheckerA(this.id)">A. lorem</button>
+                    <button class="option" id="b" onclick="answerCheckerB(this.id)">B. posem</button>
+                </div>
+                <div class="option-box">
+                    <button class="option" id="c" onclick="answerCheckerC(this.id)">C. lorem</button>
+                    <button class="option" id="d" onclick="answerCheckerD(this.id)">D. posem</button>
+                </div>
+            </div>
+            <div class="score-container">
+                <h2 id="score">Score: 1</h2>
+            </div> 
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

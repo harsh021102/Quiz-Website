@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+li, a, button{
+    font-weight: 500;
+    font-size: 20px;
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    flex-wrap: wrap;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    width: 150px;
+    font-weight: 1000;
+    color: hsl(178, 100%, 50%);
+    text-shadow: 0px 1px 15px hsl(178, 100%, 50%);
+}
+.logo:hover{
+    text-shadow: 0px 2px 20px hsl(178, 100%, 50%);
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    color: #0088a9;
+    text-shadow: 0px 1px 15px hsl(178, 100%, 50%);
+}
+.aboutus-btn{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.aboutus-btn:hover{
+    box-shadow: 0px 1px 5px hsl(178, 100%, 50%);
+    background-color: rgba(0,136,169,0.8);
+}
+@media (max-width: 768px){
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10%;
+        flex-wrap: wrap;
+    }
+    .logo {
+        cursor: pointer;
+        width: 150px;
+        margin-left: auto;
+        font-weight: 1000;
+        color: hsl(178, 100%, 50%);
+        text-align: center;
+    }
+    .nav-links li{
+        padding: 10px 20px;
+    }
+    li, a, button{
+        font-weight: 500;
+        font-size: 16px;
+        color: hsl(178, 100%, 50%);
+        text-decoration: none;
+        margin: 5px;
+    }
+}

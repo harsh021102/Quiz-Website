@@ -1,0 +1,110 @@
+.quiz-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: hsl(215, 51%, 70%);
+    box-shadow: 3px 0 10px hsl(178, 100%, 50%);
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    /* box-shadow: 0px 1px 30px hsl(178, 100%, 50%); */
+}
+.cat-header{
+    display: flex;
+    justify-content: center;
+}
+.cat-header h1{
+    font-size: 5em;
+    font-weight: 200;
+    padding:2rem;
+    color: hsl(178, 100%, 50%);
+    text-shadow: 0px 1px 10px hsl(178, 100%, 50%);
+}
+.ques-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0.2rem;
+}
+.question-number{
+    display: flex;
+    justify-content: center;
+}
+.question-number h2{
+    font-size: 3em;
+    font-weight: 200;
+    color: hsl(178, 100%, 50%);
+    text-shadow: 0px 1px 10px hsl(178, 100%, 50%);
+}
+.score-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 ;
+}
+.score-container{
+    font-size: 1em;
+    font-weight: 200;
+    color: hsl(178, 100%, 50%);
+    text-shadow: 0px 1px 10px hsl(178, 100%, 50%);
+}
+.ques-box{
+    text-align: center;
+    border-radius: 40px;
+    padding: 2rem;
+    border: 5px solid cyan;
+    color: hsl(178, 100%, 50%);
+    box-shadow: 0px 1px 10px hsl(178, 100%, 50%);
+}
+.option-box{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    gap: 1rem;
+}
+.option{
+    border: 3px solid hsl(178, 100%, 50%);
+    padding: 1.1rem;
+    border-radius: 30px;
+    font-size: 1.5em;
+    box-shadow: 0px 1px 8px hsl(178, 100%, 50%);
+    max-width: 45%;
+    flex-grow: 1;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    transition: all 0.3s ease 0s;
+}
+.option:hover{
+    cursor: pointer;
+}
+.option:hover, .option h2:hover{
+    color: hsl(178, 100%, 50%);
+    font-weight: 800;
+    transform: scale(1.06);
+}
+@media (max-width: 768px){
+    .cat-header h1 {
+        font-size: 4em;
+        font-weight: 200;
+        padding: 0.8rem;
+        color: hsl(178, 100%, 50%);
+    }
+    .question-number h2{
+        font-size: 2em;
+        font-weight: 200;
+        color: hsl(178, 100%, 50%);
+        text-shadow: 0px 1px 10px hsl(178, 100%, 50%);
+    }
+    .option{
+        border: 3px solid hsl(178, 100%, 50%);
+        padding: 0.4rem;
+        border-radius: 30px;
+        font-size: 1em;
+        flex-grow: 1;
+        min-width: 7rem;
+        min-height: 8rem;
+        box-shadow: 0px 1px 15px hsl(178, 100%, 50%);
+    }
+}
